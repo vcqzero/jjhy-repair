@@ -54,10 +54,12 @@ Route::namespace('Api')->group(function () {
         Route::any('/repair-order/distribute/{id}', 'RepairOrderController@distribute');
         Route::any('/repair-order/set-can-offer/{id}', 'RepairOrderController@setCanOffer');
         Route::any('/repair-order/export', 'RepairOrderController@export');
+        Route::any('/repair-order/comment/{id}', 'RepairOrderController@comment');
         //直接进行接单，不需竞价
         Route::any('/repair-order/take-order/{id}', 'RepairOrderController@takeOrder');
         // repair-order-grade
         Route::any('/repair-order-grade/getSelectData', 'RepairOrderGradeController@getSelectData');
+        
         // offer
         Route::any('/offer/confirm/{offer_id}/{repair_order_id}', 'OfferController@confirm');
         Route::any('/offer/refuse/{id}', 'OfferController@refuse');

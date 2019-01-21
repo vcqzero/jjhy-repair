@@ -133,7 +133,6 @@ define(
 					},
 					onCancel: function() {}
 				});
-
 			})
 
 			$('.repair_complete').on('click', function() {

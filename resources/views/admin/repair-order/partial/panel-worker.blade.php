@@ -28,6 +28,10 @@
 				<td>评价</td>
 				<td>{{ $repairOrder->comment_star ?? '-' }} 星</td>
 			</tr>
+			<tr>
+				<td>评价内容</td>
+				<td>{{ $repairOrder->comment_desc ?? '-' }}</td>
+			</tr>
 			@endif
 		</tbody>
 	</table>

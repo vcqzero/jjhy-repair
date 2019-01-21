@@ -99,6 +99,21 @@ class RepairOrderController extends Controller
         $res = $RepairOrder->save();
         return response()->json($res);
     }
+    
+    //评价订单 ，完成定单
+    public function comment($id)
+    {
+        $comment_star= (int)$this->Request->input('comment_star');
+        $comment_desc= (int)$this->Request->input('comment_desc');
+        $RepairOrder = RepairOrder::query()->find($id);
+        $RepairOrder->status = RepairOrderStatus::STATUS_COMPLETED;
+        $RepairOrder->comment_star= $comment_star;
+        $RepairOrder->comment_desc= $comment_desc;
+        $RepairOrder->completed_at= date('Y-m-d H:i:s');
+        $res = $RepairOrder->save();
+        return response()->json($res);
+    }
+    
     //管理员分配维修工程师
     public function distribute($id)
     {
@@ -307,6 +322,7 @@ class RepairOrderController extends Controller
             $repairOrder->confirmed_at ?? '-',
             $repairOrder->completed_at ?? '-',
             $repairOrder->comment_star ? $repairOrder->comment_star . '星' : '-' ,
+            $repairOrder->comment_desc . ' ' ?? '-' ,
         ];
     }
     
@@ -326,6 +342,7 @@ class RepairOrderController extends Controller
             '接单时间',
             '完工时间',
             '维修评价',
+            '评价内容',
         ];
     }
 }

@@ -72,6 +72,13 @@ class RepairOrderController extends Controller
         return response()->view('weixin.repair-order.take-order-success');
     }
     
+    //goto commentPage
+    public function commentPage($id)
+    {
+        $repairOrder = RepairOrder::query()->find($id);
+        return response()->view('weixin.repair-order.comment', ['repairOrder' => $repairOrder]);
+    }
+    
     //goto take order success page
     public function completeOrderSuccess()
     {

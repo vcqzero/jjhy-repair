@@ -402,7 +402,7 @@ define(function(require) {
 					var doResult = function(resObj, _config, form) {
 						var success = resObj['success']
 						var callback
-						if(success) {
+						if(resObj == true || success) {
 							callback = _config['resultSuccess']
 						} else {
 							callback = _config['resultError']

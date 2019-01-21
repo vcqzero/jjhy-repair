@@ -18,6 +18,7 @@
                   class="weui-check" 
                   name="comment-star"
                   value="5"
+                  checked="checked"
                   >
                   <span class="weui-icon-checked"></span>
                 </div>

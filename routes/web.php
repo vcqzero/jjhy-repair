@@ -88,6 +88,7 @@ Route::prefix('weixin')->namespace('Weixin')->group(function () {
         Route::get('/repair-order/worker-view/{id}', 'RepairOrderController@workerView');
         Route::get('/repair-order/take-order-success', 'RepairOrderController@takeOrderSuccess');
         Route::get('/repair-order/complete-order-success', 'RepairOrderController@completeOrderSuccess');
+        Route::get('/repair-order/comment-page/{id}', 'RepairOrderController@commentPage');
         // workyard
         Route::get('/workyard/edit/{id}', 'WorkyardController@edit');
         Route::get('/workyard/add', 'WorkyardController@add');

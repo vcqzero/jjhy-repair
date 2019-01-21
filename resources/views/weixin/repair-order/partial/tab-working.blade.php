@@ -23,11 +23,9 @@
 	class="weui-form-preview__btn weui-form-preview__btn_default preview-contact"
 	href="tel:{{ $repairOrder->worker->tel }}">联系工程师</a>
     <a 
-    class="weui-form-preview__btn weui-form-preview__btn_primary repair_complete" 
-    href="javascript:"
-    data-repair-order-id = "{{ $repairOrder->id }}"
+    class="weui-form-preview__btn weui-form-preview__btn_primary" 
+    href="/weixin/repair-order/comment-page/{{$repairOrder->id}}"
     >维修完成</a>
   </div>
 </div>
 @endforeach 
-@include('weixin/repair-order/partial/popup-submit-comment')

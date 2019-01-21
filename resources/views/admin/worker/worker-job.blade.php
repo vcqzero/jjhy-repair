@@ -51,6 +51,7 @@ id="worker-job-table">
 		<th data-field="">接单时间</th>
 		<th data-field="">完工时间</th>
 		<th data-field="">维修评价</th>
+		<th data-field="">评价内容</th>
 		<th data-field="">操作</th>
 	</tr>
 </thead>

@@ -86,6 +86,12 @@ define(
 							},
 							valign: 'middle',
 						},
+						//评价内容
+						{
+							sortable: true,
+							field: 'comment_desc',
+							valign: 'middle',
+						},
 						//操作
 						{
 							formatter: function(value, row, index, field) {
