@@ -1,0 +1,128 @@
+/* here you can put your own css to customize and override the theme */
+
+/* modal */
+.modal-backdrop {
+	z-index: 9999 !important;
+}
+.modal-loading {
+	margin-top: 200px !important;
+}
+
+/* nprogress */
+#nprogress .bar {
+	z-index: 9999 !important;
+}
+
+#nprogress .spinner {
+	z-index: 9999;
+}
+
+.toast {
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+.paginator-detail {
+	height: 34px;
+	text-align: left;
+	padding-top: 10px;
+}
+.th_5 {
+	width: 5%;
+}
+.th_10 {
+	width: 10%;
+}
+.th_15 {
+	width: 15%;
+}
+.th_20 {
+	width: 20%;
+}
+
+/*cropper*/
+/*img.my-avatar {
+	max-width:100% !important;
+}*/
+.cropper-container {
+	/*max-height: 500px;*/
+	max-width: 100%;
+}
+
+img.my-avatar , .img-preview img{
+	max-width: 100%;
+}
+.docs-preview {
+    margin-right: -1rem;
+}
+.img-preview {
+    float: left;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+
+.editable-input input{
+	min-width: 300px;
+}
+
+/* table */
+.fixed-table-body{
+	height: auto ;
+}
+.bs-checkbox {
+	vertical-align: middle !important;
+}
+.portlet-title .tools .fullscreen {
+	width: auto !important;
+}
+/*.bootstrap-table .bs-bars {
+	width: 100% !important;
+	margin-top: 0 !important;
+}*/
+img.logo-default {
+	width: 150px;
+	margin-top: 20px !important;
+}
+img.login {
+	width: 150px;
+}
+.login .content .create-account {
+    border-top: none !important;
+}
+.modal-panel-table tr td:first{
+	width: 10%;
+}
+.margin_right_10 {
+	margin-right: 10px;
+}
+
+.td-width-10 {
+	width: 10%;
+}
+.td-width-15 {
+	width: 15%;
+}
+.td-width-20 {
+	width: 20%;
+}
+.td-width-25 {
+	width: 25%;
+}
+.my-home-mt-action{
+	padding-left: 0 !important;
+}
+/*表单搜索中的筛选地址*/
+.table-toolbar {
+	margin-bottom: 0;
+}
+.form-inline-address {
+	width: 300px !important;
+	padding: 0 !important;
+	border: none !important;
+}
+.form-inline-address a{
+	width: 100% !important;
+}
+.commet-star-fill {
+	color: #FFEA15;
+}

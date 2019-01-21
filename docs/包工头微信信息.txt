@@ -1,0 +1,24 @@
+string(64) "App\Http\Controllers\Api\TestController::getUserinfo on line: 34"
+array(1) {
+  ["userinfo"]=>
+  array(9) {
+    ["openid"]=>
+    string(28) "oy38vxD8aqaLV5pajqoR1kqA1Hqc"
+    ["nickname"]=>
+    string(9) "ĞÏÑå¾Á"
+    ["sex"]=>
+    int(1)
+    ["language"]=>
+    string(5) "zh_CN"
+    ["city"]=>
+    string(6) "³¯Ñô"
+    ["province"]=>
+    string(6) "±±¾©"
+    ["country"]=>
+    string(6) "ÖĞ¹ú"
+    ["headimgurl"]=>
+    string(130) "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epaH1gHotWQuqb9YhBWPKib4XC16D5FVjiclkPjIVRkFzcNKycpELMWM2QsXGCXLcRQEUY1cPiafVR0g/132"
+    ["privilege"]=>
+    array(0) {
+    }
+  }

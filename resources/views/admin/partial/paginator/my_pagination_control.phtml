@@ -1,0 +1,36 @@
+<div class="pagination-control" style="width: 100%">
+	<div class="pull-left">
+		<span>当前显示 <?=$this->currentItemCount?> 条，</span>
+	   	<span>共  <?=$this->totalItemCount?> 条数据，</span>
+	   	<span>每页</span>
+		<div class="dropup" style="display: inline-flex">
+          	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="count-per-page"><?=$this->itemCountPerPage?></span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu control-count-per-page" aria-labelledby="dropdownMenu2">
+            <li><a href="javascript:;"data-conut-per-page="10">10</a></li>
+            <li><a href="javascript:;"data-conut-per-page="25">25</a></li>
+            <li><a href="javascript:;"data-conut-per-page="50">50</a></li>
+            <li><a href="javascript:;"data-conut-per-page="100">100</a></li>
+          </ul>
+        </div>
+        <span>/共 <?=$this->pageCount?>页</span>
+	</div>
+	<div class="pull-right">
+		<nav>
+		<ul class="control-page pagination" style="margin: auto">
+            <!-- 上一页 -->
+            <li class="<?=$this->previous ? "" : 'disabled' ?>"><a data-page=<?=$this->previous?>>上一页</a></li> 
+            
+            <!-- 页码 -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+            	<li class="<?= $page == $this->current ? "disabled" : '' ?>"><a data-page=<?=$page?>><?=$page?></a></li> 
+			<?php endforeach; ?>
+			
+            <!-- 下一页 -->
+            <li class="<?=$this->next? "" : 'disabled' ?>"><a data-page=<?=$this->next?>>下一页</a></li> 
+        </ul>
+        </nav>
+	</div>
+</div>
